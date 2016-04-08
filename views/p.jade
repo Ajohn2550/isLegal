@@ -1,0 +1,14 @@
+extends ./layout.jade
+
+block title
+  div#title
+    section
+      p Person
+
+block main
+  div#main
+    section
+      p Name: #{person.firstName} #{person.lastName}
+      p BirthDay: #{person.birthDate.toISOString()}
+      p Bio: #{person.bio}
+      p Legal: 
